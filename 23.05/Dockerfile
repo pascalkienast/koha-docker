@@ -51,5 +51,4 @@ COPY docker-entrypoint.sh /usr/local/bin/
 
 WORKDIR /home/koha/koha
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["bin/intranet", "prefork"]
 CMD ["bin/opac", "prefork"]
