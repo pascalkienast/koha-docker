@@ -21,6 +21,7 @@ services:
         image: koha:22.05
         ports:
             - "3000:3000"
+            - "3001:3000"
         environment:
             MOJO_MODE: development
         depends_on:
