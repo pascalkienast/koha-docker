@@ -52,3 +52,4 @@ COPY docker-entrypoint.sh /usr/local/bin/
 WORKDIR /home/koha/koha
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["bin/intranet", "prefork"]
+RUN apt-get install nodejs npm && npm install -g yarn &&  yarn install
